@@ -1,11 +1,11 @@
 "use strict";
 
 const quotes = [
-  "Practice doesn’t make perfect. Practice makes progress.",
-  "Every commit is a step forward.",
-  "Small apps, big confidence.",
-  "Break tasks down, then build them up.",
-  "Ship it, then improve it."
+  {text: "Practice doesn’t make perfect. Practice makes progress.", author: "Unknown"},
+  {text: "Every commit is a step forward.", author: "GridSyntax"},
+  {text: "Small apps, big confidence.", author: "GridSyntax"},
+  {text: "Break tasks down, then build them up.", author: "GridSyntax"},
+  {text: "Ship it, then improve it.", author: "GridSyntax"}
 ];
 
 const quoteTextEl = document.getElementById("quoteText");
@@ -17,7 +17,8 @@ function getRandomQuote() {
 }
 
 function showRandomQuote() {
-  quoteTextEl.textContent = getRandomQuote();
+  const quote = getRandomQuote();
+  quoteTextEl.textContent = `"${quote.text}"  ~ ${quote.author}`;
 }
 
 newQuoteBtn.addEventListener("click", showRandomQuote);
