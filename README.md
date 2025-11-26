@@ -9,3 +9,4 @@ This repository is for practicing Git workflows with SourceTree:
 - Merging and resolving simple conflicts
 
 The example project is a small “Practice Quote App” built with HTML, CSS, and JavaScript.
+This line was added directly on GitHub to practice pulling changes.
